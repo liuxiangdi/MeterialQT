@@ -1,3 +1,14 @@
 # MeterialQT
 
-![image](https://github.com/liuxiangdi/MeterialQT/master/demo.gif)
+A Modern UI design for pyqt5(based on [Meterial Design](https://www.material.io/))
+
+### Quick Look
+![image](https://github.com/liuxiangdi/MeterialQT/demo.gif)
+
+### TODO
++ Floatting PushButton
++ Navigation bar
++ Cards
++ Data tables
++ Dialogs
++ Image list
