@@ -2,6 +2,7 @@ import sys
 from ui import UI
 from PyQt5.QtWidgets import QApplication
 
+
 class APP():
     def __init__(self):
         self.app = QApplication(sys.argv)
