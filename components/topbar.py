@@ -1,5 +1,6 @@
 from PyQt5.QtWidgets import (
-    QLabel
+    QLabel,
+    QPushButton
 )
 from components.buttons import MPushButton
 from components.widgets import MFrame
@@ -12,35 +13,28 @@ class MTopBar(MFrame):
         self._parent = parent
         self._rootFrame = rootFrame
 
-    def setStyle(self, style_map):
-        """
-         styleSheet is a map
-         required: {"background-color": '...', "style":'mac/win', "height": {}}
-         options: {"logo:'...', 'title'"}
-         if you want add buttons additionally, please rewrite function setButtons
-        """
+        self.setStyle()
+
+    def setStyle(self, background_color="#555555", style="mac", height=80, logo=None, title=None):
         # 设定几何尺寸
-        width = self._parent.width()
-        height = style_map['height']
+        width = self._rootFrame.width()
         self.setGeometry(0, 0, width, height)
         # 设定属性
-        minimize_btn = MPushButton(parent=self)
+        minimize_btn = QPushButton(parent=self)
         minimize_btn.setGeometry(width - 130, int(height / 2 - 12), 24, 24)
         minimize_btn.setFlat(True)
-        close_btn = MPushButton(parent=self)
+        close_btn = QPushButton(parent=self)
         close_btn.setGeometry(width - 80, int(height / 2 - 12), 24, 24)
         close_btn.setFlat(True)
-        if style_map['style'] == "mac":
-            print('mac')
+        if style == "mac":
             minimize_btn.setStyleSheet("border-image: url('assests/minimize.svg')")
             close_btn.setStyleSheet("border-image: url('assests/close.svg')")
         else:
             # TODO
             pass
-        self.setStyleSheet("background-color:{}".format(style_map["background-color"]))
+        self.setStyleSheet("background-color:{};".format(background_color) +
+                           "border-bottom-left-radius:0px;border-bottom-right-radius:0px")
 
-        logo = style_map.get("logo")
-        title = style_map.get("title")
         if logo:
             logo_label = QLabel(self)
             logo_label.setGeometry(20, height / 2 - 24, 48, 48)

@@ -21,7 +21,6 @@ class MPushButton(QPushButton):
         if text:
             self.setText(text)
 
-        self.style_map = {}
         self.shadow_effect = None
         self.shadow_effect_config = None
         self.shadow_animation = None
@@ -76,9 +75,6 @@ class MPushButton(QPushButton):
             self.shadow_animation = shadow_animation
         if not activate:
             self.shadow_animation.setDuration(1)
-
-    def deactivate_shadow(self):
-        self.shadow_effect.setEnabled(False)
 
     def get_shadow_animation(self):
         return self.shadow_animation
