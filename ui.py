@@ -3,12 +3,13 @@ from PyQt5 import Qt
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import QVBoxLayout
 from PyQt5.QtCore import QFile
-from components.widgets import MFrame
+from components.widgets import MFrame, MDrawerFrame
 from components.buttons import MPushButton, MTextButton, MContaindedButton, MOutlinedButton
 from components.topbar import MTopBar
 from components.cards import MCards
 from components.utils import read_style
 from components.navigation import MNavigationDrawer
+from components.page_button_group import MPageButtonsGroup
 
 
 class UI(MFrame):
@@ -29,9 +30,13 @@ class UI(MFrame):
         main_window.setStyleSheet("background-color:#f5f5f5;border-radius:10px;")
 
         top_bar = MTopBar(main_window, self)
-        contents = MFrame(self)
+        contents = MDrawerFrame(self)
         contents.setGeometry(0, 80, 1566, 968-80)
         contents.setStyleSheet("background-color:#f5f5f5;border-radius:0px;")
+
+
+        page_button_group = MPageButtonsGroup(contents)
+        page_button_group.move(100, 100)
 
         menu = MNavigationDrawer(contents)
         menu.set_style()
@@ -47,6 +52,8 @@ class UI(MFrame):
         card_button = MTextButton("Cards", menu)
         card_button.setGeometry(0, 60, menu.width()-1, 60)
         card_button.set_styles(regular_style_sheet, activate_style_sheet, hover_style_sheet)
+
+
 
         btn_button.clicked.connect(card_button.set_regular)
         card_button.clicked.connect(btn_button.set_regular)

@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import (
 )
 import types
 from components.buttons import MPushButton
-from components.widgets import MFrame
+from components.widgets import MFrame, MDrawerFrame
 from PyQt5.QtGui import QFontDatabase, QFont
 from PyQt5.QtCore import QPropertyAnimation, Qt, QPoint, QAbstractAnimation
 
