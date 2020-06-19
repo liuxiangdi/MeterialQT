@@ -88,6 +88,11 @@ class MPushButton(QPushButton):
     def set_hover_style(self, style_sheet=None):
         self.hover_style = style_sheet
 
+    def set_styles(self, regular_style=None, activate_style=None, hover_style=None):
+        self.regular_style = regular_style
+        self.activate_style = activate_style
+        self.hover_style = hover_style
+
     def setup_style(self):
         """
         用户应自己设定style sheet
@@ -141,9 +146,9 @@ class MTextButton(MPushButton):
     """
     这是一个典型的TEXT button的实现方式
     """
+    def __init__(self, text=None, parent=None):
+        super(MTextButton, self).__init__(text, parent)
 
-    def __init__(self, parent=None, text=None):
-        super(MTextButton, self).__init__(parent, text)
 
     def set_regular_style(self, style_sheet=None):
         if style_sheet is None:

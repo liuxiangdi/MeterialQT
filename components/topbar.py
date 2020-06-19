@@ -21,10 +21,10 @@ class MTopBar(MFrame):
         self.setGeometry(0, 0, width, height)
         # 设定属性
         minimize_btn = QPushButton(parent=self)
-        minimize_btn.setGeometry(width - 130, int(height / 2 - 12), 24, 24)
+        minimize_btn.setGeometry(width - 100, int(height / 2 - 12), 24, 24)
         minimize_btn.setFlat(True)
         close_btn = QPushButton(parent=self)
-        close_btn.setGeometry(width - 80, int(height / 2 - 12), 24, 24)
+        close_btn.setGeometry(width - 50, int(height / 2 - 12), 24, 24)
         close_btn.setFlat(True)
         if style == "mac":
             minimize_btn.setStyleSheet("border-image: url('assests/minimize.svg')")

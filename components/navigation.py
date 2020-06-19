@@ -1,43 +1,33 @@
 from PyQt5.QtWidgets import (
     QLabel,
+    QPushButton
 )
+import types
 from components.buttons import MPushButton
 from components.widgets import MFrame
 from PyQt5.QtGui import QFontDatabase, QFont
 from PyQt5.QtCore import QPropertyAnimation, Qt, QPoint, QAbstractAnimation
 
 
-class MSideMenu(MFrame):
+class MNavigationDrawer(MFrame):
     def __init__(self, parent):
-        super(MSideMenu, self).__init__(parent)
+        super(MNavigationDrawer, self).__init__(parent)
+
+        self._parent = parent
 
         self.show_animation = None
         self.appear_btn = None
 
-    def set_style(self, style_map):
-        width = style_map['width']
-        height = style_map['height']
+        self.set_style()
+
+    def set_style(self, width=200, height=None, background_color="#FFFFFF"):
+        if not height:
+            height = self._parent.height()
         self.setGeometry(-width, 0, width, height)
 
-        background_color = style_map['background-color']
-        header_img_path = style_map['header_img']
-
-        header_img = QLabel(self)
-        header_img.setGeometry(int(width / 2 - 32), 32, 64, 64)
-        header_img.setStyleSheet("border-image:url({});".format(header_img_path))
-
-        info_label = QLabel("1578608950@qq.com", self)
-        info_label.setGeometry(0, 100, width, 60)
-        info_label.setAlignment(Qt.AlignCenter)
-        font_id = QFontDatabase.addApplicationFont("font/Roboto-Regular-14.ttf")
-        font_name = QFontDatabase.applicationFontFamilies(font_id)[0]
-        font = QFont(font_name, 10, 1)
-        info_label.setFont(font)
-
-        hide_btn = MPushButton(parent=self)
-        hide_btn.setGeometry(int(width / 2 - 24), int(height - 80), 48, 48)
+        hide_btn = QPushButton(parent=self)
+        hide_btn.setGeometry(int(width/2 - 18), int(height - 60), 36, 36)
         hide_btn.setStyleSheet("border-image:url('assests/back.svg')")
-
         hide_btn.clicked.connect(self.disappear)
 
         self.show_animation = QPropertyAnimation(self, b"pos")
@@ -45,14 +35,15 @@ class MSideMenu(MFrame):
         self.show_animation.setEndValue(QPoint(0, 0))
         self.show_animation.setDuration(200)
         self.show_animation.setDirection(QAbstractAnimation.Forward)
-        self.setStyleSheet("background-color:{}".format(background_color))
-        self.setup_btns()
+        self.setStyleSheet("background-color:{};border-right:1px solid #e0e0e0".format(background_color))
 
-    def set_trigger_btn(self, btn):
-        btn.clicked.connect(self.appear)
-        self.appear_btn = btn
+    def drawerEvent(self, Qevent):
+        if Qevent <= 0:
+            return
+        self.move(min(Qevent-self.width(), 0), 0)
 
     def appear(self):
+        # 如果采用 btn trigger使得menu出现，可使用该方法
         if self.appear_btn is not None:
             self.appear_btn.hide()
         self.show_animation.setStartValue(self.pos())
@@ -66,8 +57,3 @@ class MSideMenu(MFrame):
         self.show_animation.setDirection(QAbstractAnimation.Backward)
         self.show_animation.start()
 
-    def setup_btns(self):
-        """
-        user should rewrite this function
-        """
-        pass

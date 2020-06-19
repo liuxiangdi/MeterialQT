@@ -1,12 +1,14 @@
 import time
 from PyQt5 import Qt
 from PyQt5 import QtCore
+from PyQt5.QtWidgets import QVBoxLayout
 from PyQt5.QtCore import QFile
 from components.widgets import MFrame
 from components.buttons import MPushButton, MTextButton, MContaindedButton, MOutlinedButton
 from components.topbar import MTopBar
 from components.cards import MCards
 from components.utils import read_style
+from components.navigation import MNavigationDrawer
 
 
 class UI(MFrame):
@@ -24,15 +26,33 @@ class UI(MFrame):
 
         main_window = MFrame(self)
         main_window.setGeometry(0, 0, 1566, 968)
-        main_window.setStyleSheet("background-color:#f0f0f0;border-radius:10px;")
+        main_window.setStyleSheet("background-color:#f5f5f5;border-radius:10px;")
 
         top_bar = MTopBar(main_window, self)
+        contents = MFrame(self)
+        contents.setGeometry(0, 80, 1566, 968-80)
+        contents.setStyleSheet("background-color:#f5f5f5;border-radius:0px;")
 
-        btn = MCards(main_window)
-        btn.move(100, 100)
+        menu = MNavigationDrawer(contents)
+        menu.set_style()
 
-    def mousePressEvent(self, Qevent):
-        pass
+        regular_style_sheet = "border:none;color:#808080;background-color:#FFFFFF;"
+        activate_style_sheet = "border:none;color:#404040;background-color:#EFEFEF;"
+        hover_style_sheet = "border:none;color:#404040;background-color:#ECECEC;"
 
-    def mouseMoveEvent(self, Qevent):
-        pass
+        btn_button = MTextButton("BUTTONS", menu)
+        btn_button.setGeometry(0, 0, menu.width()-1, 60)
+        btn_button.set_styles(regular_style_sheet, activate_style_sheet, hover_style_sheet)
+
+        card_button = MTextButton("Cards", menu)
+        card_button.setGeometry(0, 60, menu.width()-1, 60)
+        card_button.set_styles(regular_style_sheet, activate_style_sheet, hover_style_sheet)
+
+        btn_button.clicked.connect(card_button.set_regular)
+        card_button.clicked.connect(btn_button.set_regular)
+
+        contents.moveX.connect(menu.drawerEvent)
+
+        # btn = MCards(main_window)
+        # btn.move(100, 100)
+
