@@ -74,8 +74,6 @@ class MPageButtonsGroup(QFrame):
         else:
             self.current_page = current_page
 
-        print(self.current_page)
-
         if self.current_page < 5:
             for i in range(10):
                 self.page_btns[i].setText(str(i+1))

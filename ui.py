@@ -1,8 +1,7 @@
 import time
 from PyQt5 import Qt
 from PyQt5 import QtCore
-from PyQt5.QtWidgets import QVBoxLayout
-from PyQt5.QtCore import QFile
+from components.tabs import MHTabs
 from components.widgets import MFrame, MDrawerFrame
 from components.buttons import MPushButton, MTextButton, MContaindedButton, MOutlinedButton
 from components.topbar import MTopBar
@@ -53,7 +52,9 @@ class UI(MFrame):
         card_button.setGeometry(0, 60, menu.width()-1, 60)
         card_button.set_styles(regular_style_sheet, activate_style_sheet, hover_style_sheet)
 
-
+        tabs = MHTabs(contents)
+        tabs.set_buttons([["CONTAINED", 200, 76], ["TEXT", 150, 76], ["OUTLINED", 200, 76]])
+        tabs.move(100, 20)
 
         btn_button.clicked.connect(card_button.set_regular)
         card_button.clicked.connect(btn_button.set_regular)

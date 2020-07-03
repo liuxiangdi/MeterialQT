@@ -154,7 +154,6 @@ class MTextButton(MPushButton):
         if style_sheet is None:
             style_sheet = "border:none;border-radius:8px;color:#808080;background-color:#FFFFFF;"
         self.regular_style = style_sheet
-        print('regular')
 
     def set_activate_style(self, style_sheet=None):
         if style_sheet is None:

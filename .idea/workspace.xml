@@ -43,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../movie_desktop" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -54,7 +54,28 @@
       <recent name="C:\Users\lxd\Desktop\MeterialQT\assests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.MovieDesktop">
+    <configuration name="MovieDesktop" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MeterialQT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MovieDesktop.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MeterialQT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,27 +139,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="topbar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="MeterialQT" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/components" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/components/topbar.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="ui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MeterialQT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MovieDesktop" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.navigation (1)" />
         <item itemvalue="Python.ui" />
         <item itemvalue="Python.navigation" />
-        <item itemvalue="Python.topbar" />
       </list>
     </recent_temporary>
   </component>
@@ -200,50 +200,50 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="434" y="68" width="1102" height="704" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1591691669700" />
-    <state x="880" y="115" key="FileChooserDialogImpl" timestamp="1592206457107">
+    <state x="880" y="115" key="FileChooserDialogImpl" timestamp="1592805576843">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="880" y="115" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1592206457107" />
-    <state width="1511" height="210" key="GridCell.Tab.0.bottom" timestamp="1592553045443">
+    <state x="880" y="115" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1592805576843" />
+    <state width="1511" height="210" key="GridCell.Tab.0.bottom" timestamp="1592805583922">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1511" height="210" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1592553045443" />
-    <state width="1511" height="210" key="GridCell.Tab.0.center" timestamp="1592553045443">
+    <state width="1511" height="210" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1592805583922" />
+    <state width="1511" height="210" key="GridCell.Tab.0.center" timestamp="1592805583922">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1511" height="210" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1592553045443" />
-    <state width="1511" height="210" key="GridCell.Tab.0.left" timestamp="1592553045443">
+    <state width="1511" height="210" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1592805583922" />
+    <state width="1511" height="210" key="GridCell.Tab.0.left" timestamp="1592805583921">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1511" height="210" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1592553045443" />
-    <state width="1511" height="210" key="GridCell.Tab.0.right" timestamp="1592553045443">
+    <state width="1511" height="210" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1592805583921" />
+    <state width="1511" height="210" key="GridCell.Tab.0.right" timestamp="1592805583922">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1511" height="210" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1592553045443" />
-    <state width="1511" height="250" key="GridCell.Tab.1.bottom" timestamp="1592397477774">
+    <state width="1511" height="210" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1592805583922" />
+    <state width="1511" height="250" key="GridCell.Tab.1.bottom" timestamp="1592557654418">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1511" height="250" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1592397477774" />
-    <state width="1511" height="250" key="GridCell.Tab.1.center" timestamp="1592397477774">
+    <state width="1511" height="250" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1592557654418" />
+    <state width="1511" height="250" key="GridCell.Tab.1.center" timestamp="1592557654418">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1511" height="250" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1592397477774" />
-    <state width="1511" height="250" key="GridCell.Tab.1.left" timestamp="1592397477774">
+    <state width="1511" height="250" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1592557654418" />
+    <state width="1511" height="250" key="GridCell.Tab.1.left" timestamp="1592557654418">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1511" height="250" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1592397477774" />
-    <state width="1511" height="250" key="GridCell.Tab.1.right" timestamp="1592397477774">
+    <state width="1511" height="250" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1592557654418" />
+    <state width="1511" height="250" key="GridCell.Tab.1.right" timestamp="1592557654418">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1511" height="250" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1592397477774" />
+    <state width="1511" height="250" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1592557654418" />
     <state x="396" y="0" key="SettingsEditor" timestamp="1592285315104">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="396" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1592285315104" />
-    <state x="670" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592547371462">
+    <state x="670" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592804678497">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="670" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.834@0.0.1536.834" timestamp="1592547371462" />
+    <state x="670" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.834@0.0.1536.834" timestamp="1592804678497" />
     <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1592547518955">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
