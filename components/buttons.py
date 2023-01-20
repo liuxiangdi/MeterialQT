@@ -126,6 +126,7 @@ class MPushButton(QPushButton):
             self.set_regular()
         else:
             self.set_activate()
+
     def mouseReleaseEvent(self, evt):
         self.released.emit(True)
 
@@ -146,9 +147,9 @@ class MTextButton(MPushButton):
     """
     这是一个典型的TEXT button的实现方式
     """
+
     def __init__(self, text=None, parent=None):
         super(MTextButton, self).__init__(text, parent)
-
 
     def set_regular_style(self, style_sheet=None):
         if style_sheet is None:

@@ -3,10 +3,12 @@ from components.widgets import MFrame
 from PyQt5.QtCore import QPropertyAnimation, QRect
 from components.buttons import MTextButton
 
+
 class MHTabs(MFrame):
     """
     横向的Tabs
     """
+
     def __init__(self, parent=None, height=80, width=None):
         super(MHTabs, self).__init__(parent)
 
@@ -42,7 +44,7 @@ class MHTabs(MFrame):
             _btn.set_styles(regular_style_sheet, activate_style_sheet, hover_style_sheet)
             x += btn[1]
             self.tabs.append(_btn)
-        self.line.setGeometry(0, self.height()-4, self.tabs[0].width(), 4)
+        self.line.setGeometry(0, self.height() - 4, self.tabs[0].width(), 4)
 
         for btn in self.tabs:
             btn.clicked.connect(self.line_move)

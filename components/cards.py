@@ -2,9 +2,7 @@ from PyQt5.QtWidgets import (
     QLabel,
     QGraphicsDropShadowEffect,
     QVBoxLayout,
-    QSizePolicy
 )
-import time
 from PyQt5.QtCore import pyqtSignal, QPropertyAnimation, Qt
 from PyQt5.QtGui import QFont, QColor, QPixmap
 from components.utils import get_roboto_font

@@ -7,6 +7,7 @@ def get_roboto_font():
     font_name = QFontDatabase.applicationFontFamilies(font_id)[0]
     return font_name
 
+
 def read_style():
     qss = QFile("stylesheet.qss")
     qss.open(QFile.ReadOnly)

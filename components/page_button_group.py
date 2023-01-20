@@ -4,10 +4,12 @@ from components.widgets import QFrame
 from components.buttons import MOutlinedButton
 from components.utils import get_roboto_font
 
+
 class MPageButtonsGroup(QFrame):
     """
     default style is github style
     """
+
     def __init__(self, parent=None, max_page=100):
         super(MPageButtonsGroup, self).__init__(parent)
 
@@ -28,7 +30,7 @@ class MPageButtonsGroup(QFrame):
         lay_out.setSpacing(0)
         font = QFont(get_roboto_font(), 11, 1)
         for i in range(10):
-            btn = MOutlinedButton(str(i+1), self)
+            btn = MOutlinedButton(str(i + 1), self)
             btn.set_styles(regular_style, activate_style, hover_style)
             btn.setFixedSize(50, 40)
             btn.setFont(font)
@@ -40,16 +42,16 @@ class MPageButtonsGroup(QFrame):
         pre_regular_style = "border:1px solid #e0e0e0;border-top-left-radius:8px;border-bottom-left-radius:8px;" \
                             "color:#0361D6;background-color:#FFFFFF;"
         pre_hover_style = "border:1px solid #e0e0e0;border-top-left-radius:8px;border-bottom-left-radius:8px;" \
-                      "color:#0361D6;background-color:#EFF3F6;"
+                          "color:#0361D6;background-color:#EFF3F6;"
         self.pre_btn.set_styles(pre_regular_style, pre_hover_style, pre_hover_style)
         self.pre_btn.setFont(font)
         self.pre_btn.setFixedSize(120, 40)
         self.pre_btn.set_shadow_effect(activate=False)
 
         next_regular_style = "border:1px solid #e0e0e0;border-top-right-radius:8px;border-bottom-right-radius:8px;" \
-                            "color:#0361D6;background-color:#FFFFFF;border-left:0px"
+                             "color:#0361D6;background-color:#FFFFFF;border-left:0px"
         next_hover_style = "border:1px solid #e0e0e0;border-top-right-radius:8px;border-bottom-right-radius:8px;" \
-                          "color:#0361D6;background-color:#EFF3F6;border-left:0px;"
+                           "color:#0361D6;background-color:#EFF3F6;border-left:0px;"
         self.next_btn = MOutlinedButton("下一页", self)
         self.next_btn.set_styles(next_regular_style, next_hover_style, next_hover_style)
         self.next_btn.setFont(font)
@@ -76,8 +78,8 @@ class MPageButtonsGroup(QFrame):
 
         if self.current_page < 5:
             for i in range(10):
-                self.page_btns[i].setText(str(i+1))
-                if i == self.current_page-1:
+                self.page_btns[i].setText(str(i + 1))
+                if i == self.current_page - 1:
                     self.page_btns[i].set_activate()
                 else:
                     self.page_btns[i].set_regular()
@@ -87,7 +89,7 @@ class MPageButtonsGroup(QFrame):
                     self.page_btns[i].set_activate()
                 else:
                     self.page_btns[i].set_regular()
-                self.page_btns[i].setText(str(self.current_page+i-4))
+                self.page_btns[i].setText(str(self.current_page + i - 4))
 
     def on_click_direction(self):
         if self.sender() == self.pre_btn:

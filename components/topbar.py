@@ -2,7 +2,6 @@ from PyQt5.QtWidgets import (
     QLabel,
     QPushButton
 )
-from components.buttons import MPushButton
 from components.widgets import MFrame
 from PyQt5.QtGui import QFont, QFontDatabase
 

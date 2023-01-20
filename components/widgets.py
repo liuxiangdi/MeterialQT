@@ -9,6 +9,7 @@ class MFrame(QFrame):
 
     initX = 0
     initY = 0
+
     def __init__(self, parent=None):
         super(MFrame, self).__init__(parent)
 
@@ -16,7 +17,6 @@ class MFrame(QFrame):
         self.press_signal.emit(True)
         self.initX = Qevent.globalX()
         self.initY = Qevent.globalY()
-
 
     def mouseMoveEvent(self, Qevent):
         moveX = Qevent.globalX() - self.initX

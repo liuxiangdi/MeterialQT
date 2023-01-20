@@ -19,7 +19,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="335f2582-2824-42a7-b040-5f5e1e5238ab" name="Default Changelist" comment="" />
+    <list default="true" id="335f2582-2824-42a7-b040-5f5e1e5238ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/MeterialQT.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MeterialQT.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/buttons.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/buttons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/cards.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/cards.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/navigation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/page_button_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/page_button_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/tabs.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/tabs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/topbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/topbar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/Roboto-Black-1.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/Roboto-BlackItalic-2.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/Roboto-Bold-3.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/Roboto-BoldItalic-6.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/Roboto-Italic-9.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/Roboto-Light-10.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/Roboto-LightItalic-11.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/Roboto-Medium-12.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/Roboto-MediumItalic-13.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/Roboto-Thin-15.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/Roboto-ThinItalic-16.ttf" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,17 +59,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1d4kBgUzs8ycJ7TQT4IyxLpVpQU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../movie_desktop" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "F:/MeterialQT",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lxd\Desktop\MeterialQT\assests" />
@@ -54,7 +83,7 @@
       <recent name="C:\Users\lxd\Desktop\MeterialQT\assests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MovieDesktop">
+  <component name="RunManager" selected="Python.playground">
     <configuration name="MovieDesktop" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MeterialQT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,7 +147,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="navigation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="playground" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MeterialQT" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,11 +155,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/components" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\lxd\Desktop\MeterialQT\components\navigation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/playground.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,14 +191,15 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MovieDesktop" />
+        <item itemvalue="Python.playground" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.MovieDesktop" />
         <item itemvalue="Python.navigation (1)" />
         <item itemvalue="Python.ui" />
-        <item itemvalue="Python.navigation" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -193,60 +223,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="434" y="68" width="1102" height="704" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591691669700">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="434" y="68" width="1102" height="704" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1591691669700" />
-    <state x="880" y="115" key="FileChooserDialogImpl" timestamp="1592805576843">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="880" y="115" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1592805576843" />
-    <state width="1511" height="210" key="GridCell.Tab.0.bottom" timestamp="1592805583922">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1511" height="210" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1592805583922" />
-    <state width="1511" height="210" key="GridCell.Tab.0.center" timestamp="1592805583922">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1511" height="210" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1592805583922" />
-    <state width="1511" height="210" key="GridCell.Tab.0.left" timestamp="1592805583921">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1511" height="210" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1592805583921" />
-    <state width="1511" height="210" key="GridCell.Tab.0.right" timestamp="1592805583922">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1511" height="210" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1592805583922" />
-    <state width="1511" height="250" key="GridCell.Tab.1.bottom" timestamp="1592557654418">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1511" height="250" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1592557654418" />
-    <state width="1511" height="250" key="GridCell.Tab.1.center" timestamp="1592557654418">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1511" height="250" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1592557654418" />
-    <state width="1511" height="250" key="GridCell.Tab.1.left" timestamp="1592557654418">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1511" height="250" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1592557654418" />
-    <state width="1511" height="250" key="GridCell.Tab.1.right" timestamp="1592557654418">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1511" height="250" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1592557654418" />
-    <state x="396" y="0" key="SettingsEditor" timestamp="1592285315104">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="396" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1592285315104" />
-    <state x="670" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592804678497">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="670" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.834@0.0.1536.834" timestamp="1592804678497" />
-    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1592547518955">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1592547518955" />
   </component>
 </project>

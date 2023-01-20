@@ -1,12 +1,8 @@
 from PyQt5.QtWidgets import (
-    QLabel,
     QPushButton
 )
-import types
-from components.buttons import MPushButton
-from components.widgets import MFrame, MDrawerFrame
-from PyQt5.QtGui import QFontDatabase, QFont
-from PyQt5.QtCore import QPropertyAnimation, Qt, QPoint, QAbstractAnimation
+from components.widgets import MFrame
+from PyQt5.QtCore import QPropertyAnimation, QPoint, QAbstractAnimation
 
 
 class MNavigationDrawer(MFrame):
@@ -26,7 +22,7 @@ class MNavigationDrawer(MFrame):
         self.setGeometry(-width, 0, width, height)
 
         hide_btn = QPushButton(parent=self)
-        hide_btn.setGeometry(int(width/2 - 18), int(height - 60), 36, 36)
+        hide_btn.setGeometry(int(width / 2 - 18), int(height - 60), 36, 36)
         hide_btn.setStyleSheet("border-image:url('assests/back.svg')")
         hide_btn.clicked.connect(self.disappear)
 
@@ -40,7 +36,7 @@ class MNavigationDrawer(MFrame):
     def drawerEvent(self, Qevent):
         if Qevent <= 0:
             return
-        self.move(min(Qevent-self.width(), 0), 0)
+        self.move(min(Qevent - self.width(), 0), 0)
 
     def appear(self):
         # 如果采用 btn trigger使得menu出现，可使用该方法
@@ -56,4 +52,3 @@ class MNavigationDrawer(MFrame):
         self.show_animation.setEndValue(self.pos())
         self.show_animation.setDirection(QAbstractAnimation.Backward)
         self.show_animation.start()
-
