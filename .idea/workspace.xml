@@ -20,29 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="335f2582-2824-42a7-b040-5f5e1e5238ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/MeterialQT.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MeterialQT.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/buttons.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/buttons.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/cards.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/cards.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/navigation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/page_button_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/page_button_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/tabs.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/tabs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/topbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/topbar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/widgets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/Roboto-Black-1.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/Roboto-BlackItalic-2.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/Roboto-Bold-3.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/Roboto-BoldItalic-6.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/Roboto-Italic-9.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/Roboto-Light-10.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/Roboto-LightItalic-11.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/Roboto-Medium-12.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/Roboto-MediumItalic-13.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/Roboto-Thin-15.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/font/Roboto-ThinItalic-16.ttf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

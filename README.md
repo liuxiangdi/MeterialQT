@@ -3,7 +3,7 @@
 A Modern UI design for pyqt5(based on [Meterial Design](https://www.material.io/))
 
 ### Quick Look
-![image](demo.gif)
+![image](https://github.com/liuxiangdi/MeterialQT/blob/master/demo.gif)
 
 ### Finished
 + Buttons
